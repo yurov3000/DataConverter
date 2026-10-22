@@ -33,7 +33,7 @@ jobs:
         run: cmake --build build --config Release --parallel
 
       - name: Test
-        run: ctest --test-dir build -C Release --output-on-failure --output-junit build/test-results.xml
+        run: ctest --test-dir build -C Release --output-on-failure --output-junit test-results.xml
 
       - name: Upload test results
         if: always()
