@@ -65,6 +65,7 @@ TEST(Converter, NestedObjectCannotExportToCsv) {
 
 TEST(Converter, MalformedJsonRejected) {
     EXPECT_THROW(convert_text("[", "json", "yaml"), std::exception);
+    EXPECT_EQ(1, 2);
 }
 
 TEST(Converter, EmptyCsvProducesEmptyArray) {
